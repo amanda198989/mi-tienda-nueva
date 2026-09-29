@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área Creativa Digital | Tienda Oficial</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f9fc;
+            color: #333;
+            scroll-behavior: smooth;
+        }
+        header {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+        .catalogo {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .catalogo h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #444;
+        }
+        .grid-productos {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        .card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            width: 280px;
+            padding: 20px;
+            text-align: center;
+        }
+        .imagen-placeholder {
+            background-color: #e2e8f0;
+            height: 180px;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #718096;
+            font-size: 0.9em;
+            margin-bottom: 15px;
+        }
+        .card h3 {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+        .descripcion {
+            font-size: 0.9em;
+            color: #666;
+            margin-bottom: 15px;
+            line-height: 1.4;
+        }
+        .precio {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #2b6cb0;
+            margin-bottom: 15px;
+        }
+        .btn-comprar {
+            display: inline-block;
+            background-color: #48bb78;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .btn-comprar:hover {
+            background-color: #38a169;
+        }
+        /* Sección de Pago */
+        .seccion-pago {
+            max-width: 800px;
+            margin: 50px auto;
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+        .seccion-pago h2 {
+            color: #2d3748;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .pasos-pago {
+            line-height: 1.6;
+            color: #4a5568;
+        }
+        .pasos-pago ol {
+            padding-left: 20px;
+        }
+        .pasos-pago li {
+            margin-bottom: 12px;
+        }
+        .btn-whatsapp {
+            display: inline-block;
+            background-color: #25d366;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 15px;
+            transition: background 0.3s;
+        }
+        .btn-whatsapp:hover {
+            background-color: #20ba5a;
+        }
+        .aviso-envio {
+            background-color: #ebf8ff;
+            border-left: 4px solid #3182ce;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 4px;
+            font-size: 0.95em;
+            color: #2b6cb0;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #2d3748;
+            color: white;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Área Creativa Digital</h1>
+        <p>Libros de actividades, cuadernos y recursos exclusivos listos para descargar e imprimir.</p>
+    </header>
+
+    <main class="catalogo">
+        <h2>Nuestros Productos Destacados</h2>
+        
+        <div class="grid-productos">
+            <!-- Producto 1 -->
+            <div class="card">
+                <img src="Pack de Tarjetas de Vocabulario.PNG" alt="Pack de Tarjetas de Vocabulario" style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 15px;">
+                <h3>Cuaderno de Actividades ABC</h3>
+                <p class="descripcion">Formato PDF en alta calidad. <strong>¡Descarga inmediata para imprimir en casa tantas veces quieras!</strong></p>
+                <p class="precio">6.99 €</p>
+                <a href="#metodos-de-pago" class="btn-comprar">Comprar Ahora</a>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="card">
+                <img src="Cuaderno de Actividades ABC.PNG" alt="Cuaderno de Actividades ABC" style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 15px;">   
+                <p class="descripcion">Recursos visuales ideales para el aprendizaje. <strong>Formato listo para impresión directa.</strong></p>
+                <p class="precio">4.99 €</p>
+                <a href="#metodos-de-pago" class="btn-comprar">Comprar Ahora</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Sección de Instrucciones de Pago -->
+    <section id="metodos-de-pago" class="seccion-pago">
+        <h2>Métodos de Pago e Instrucciones</h2>
+        <div class="pasos-pago">
+            <p>Adquirir cualquiera de nuestros recursos digitales es muy fácil y seguro mediante pago directo:</p>
+            <ol>
+                <li><strong>Elige tu método preferido:</strong> Puedes realizar un pago rápido por <strong>Bizum</strong> o mediante <strong>Transferencia Bancaria</strong>.</li>
+                <li><strong>Realiza el ingreso:</strong> 
+                    <br>• Bizum al número: <em>PON_AQUI_TU_NUMERO_BIZUM</em>
+                    <br>• Cuenta Bancaria (IBAN): <em>PON_AQUI_TU_IBAN</em>
+                </li>
+                <li><strong>Envía tu comprobante:</strong> Una vez realizado el pago, haz clic en el botón de abajo para enviarnos el justificante por WhatsApp junto con el nombre del producto y tu correo electrónico.</li>
+            </ol>
+
+          <!-- Botón directo a WhatsApp con tu número configurado -->
+            <div style="text-align: center;">
+                <a href="https://wa.me/34697787830?text=Hola,%20ya%20realic%C3%A9%20el%20pago.%20Adjunto%20mi%20comprobante%20para%20recibir%20mi%20recurso%20digital." class="btn-whatsapp" target="_blank">📱 Enviar Comprobante por WhatsApp</a>
+            </div>
+
+            <div class="aviso-envio">
+                <strong>Entrega Rápida:</strong> En cuanto verifiquemos el pago, te enviaremos el archivo PDF de alta calidad directamente a tu correo electrónico para que puedas imprimirlo al instante.
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Área Creativa Digital - Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
