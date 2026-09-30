@@ -1,215 +1,193 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Área Creativa Digital | Tienda Oficial</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f7f9fc;
-            color: #333;
-            scroll-behavior: smooth;
-        }
-        header {
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            color: white;
-            text-align: center;
-            padding: 50px 20px;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
-        header p {
-            font-size: 1.2em;
-            margin-top: 10px;
-        }
-        .catalogo {
-            max-width: 1000px;
-            margin: 40px auto;
-            padding: 0 20px;
-        }
-        .catalogo h2 {
-            text-align: center;
-            margin-bottom: 30px;
-            color: #444;
-        }
-        .grid-productos {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            flex-wrap: wrap;
-        }
-        .card {
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-            width: 280px;
-            padding: 20px;
-            text-align: center;
-        }
-        .imagen-placeholder {
-            background-color: #e2e8f0;
-            height: 180px;
-            border-radius: 6px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #718096;
-            font-size: 0.9em;
-            margin-bottom: 15px;
-        }
-        .card h3 {
-            font-size: 1.2em;
-            margin: 10px 0;
-        }
-        .descripcion {
-            font-size: 0.9em;
-            color: #666;
-            margin-bottom: 15px;
-            line-height: 1.4;
-        }
-        .precio {
-            font-size: 1.3em;
-            font-weight: bold;
-            color: #2b6cb0;
-            margin-bottom: 15px;
-        }
-        .btn-comprar {
-            display: inline-block;
-            background-color: #48bb78;
-            color: white;
-            padding: 10px 20px;
-            border-radius: 5px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: background 0.3s;
-        }
-        .btn-comprar:hover {
-            background-color: #38a169;
-        }
-        /* Sección de Pago */
-        .seccion-pago {
-            max-width: 800px;
-            margin: 50px auto;
-            background: white;
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-        }
-        .seccion-pago h2 {
-            color: #2d3748;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .pasos-pago {
-            line-height: 1.6;
-            color: #4a5568;
-        }
-        .pasos-pago ol {
-            padding-left: 20px;
-        }
-        .pasos-pago li {
-            margin-bottom: 12px;
-        }
-        .btn-whatsapp {
-            display: inline-block;
-            background-color: #25d366;
-            color: white;
-            padding: 12px 20px;
-            border-radius: 5px;
-            text-decoration: none;
-            font-weight: bold;
-            margin-top: 15px;
-            transition: background 0.3s;
-        }
-        .btn-whatsapp:hover {
-            background-color: #20ba5a;
-        }
-        .aviso-envio {
-            background-color: #ebf8ff;
-            border-left: 4px solid #3182ce;
-            padding: 15px;
-            margin-top: 20px;
-            border-radius: 4px;
-            font-size: 0.95em;
-            color: #2b6cb0;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #2d3748;
-            color: white;
-            margin-top: 50px;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Área Creativa Digital | Libros de actividades y tarjetas para imprimir</title>
+<meta name="description" content="Cuadernos de actividades y tarjetas de vocabulario en PDF para niños. Descarga inmediata e imprime en casa las veces que quieras.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#1B2F6B;--sky:#EAF5FF;--sun:#FFC93C;--lion:#F29A2E;--green:#2E9E5B;--pink:#E5487A;--ink:#27304A;--white:#fff}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:64px}
+body{font-family:Nunito,system-ui,sans-serif;color:var(--ink);background:var(--white);line-height:1.6;font-size:17px}
+h1,h2,h3{font-family:"Baloo 2",system-ui,sans-serif;color:var(--navy);line-height:1.15}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--pink);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:0;z-index:5;background:var(--white);border-bottom:3px solid var(--sun)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:60px;flex-wrap:wrap}
+.logo{font-family:"Baloo 2",sans-serif;font-weight:800;color:var(--navy);text-decoration:none;font-size:1.15rem}
+nav a{text-decoration:none;font-weight:700;margin-left:16px;font-size:.95rem}
+nav a:hover{color:var(--pink)}
+.hero{background:var(--sky);padding:48px 0 56px}
+.hero .wrap{display:grid;gap:32px;align-items:center}
+.hero h1{font-size:clamp(2rem,6vw,3.3rem);font-weight:800}
+.hero p{margin:14px 0 22px;max-width:46ch;font-size:1.1rem}
+.covers{display:flex;justify-content:center;gap:0}
+.covers img{width:44%;max-width:230px;border-radius:12px;box-shadow:0 8px 22px rgba(27,47,107,.25);background:#fff}
+.covers img:first-child{transform:rotate(-5deg) translateX(10px)}
+.covers img:last-child{transform:rotate(4deg) translateX(-10px);margin-top:18px}
+.btn{display:inline-block;background:var(--green);color:#fff;font-weight:800;text-decoration:none;padding:13px 26px;border-radius:999px;font-size:1.05rem;border:0;cursor:pointer}
+.btn:hover{background:#25834b}
+.btn.alt{background:var(--navy)}
+.trust{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:18px;font-weight:700;font-size:.92rem;color:var(--navy)}
+section{padding:56px 0}
+section h2{font-size:clamp(1.6rem,4vw,2.2rem);margin-bottom:8px}
+.lead{margin-bottom:28px;max-width:60ch}
+.grid{display:grid;gap:24px}
+.card{border:3px solid var(--sun);border-radius:20px;padding:18px;background:#fff;display:flex;flex-direction:column}
+.card img{width:100%;border-radius:12px;background:var(--sky)}
+.card h3{font-size:1.4rem;margin:14px 0 6px}
+.card ul{padding-left:20px;margin:8px 0 14px}
+.price{font-family:"Baloo 2",sans-serif;font-weight:800;font-size:1.8rem;color:var(--pink);margin:auto 0 10px}
+.steps{display:grid;gap:18px;counter-reset:s;list-style:none;padding:0}
+.steps li{counter-increment:s;background:var(--sky);border-radius:16px;padding:18px 18px 18px 64px;position:relative}
+.steps li::before{content:counter(s);position:absolute;left:16px;top:14px;width:36px;height:36px;border-radius:50%;background:var(--lion);color:#fff;font-family:"Baloo 2",sans-serif;font-weight:800;display:grid;place-items:center;font-size:1.2rem}
+.steps strong{color:var(--navy)}
+.band{background:var(--navy);color:#fff}
+.band h2{color:#fff}
+.band form{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.band input{flex:1 1 220px;padding:13px 16px;border-radius:999px;border:0;font:inherit}
+.band .btn{background:var(--sun);color:var(--navy)}
+details{border:2px solid var(--sky);border-radius:14px;padding:14px 18px;margin-bottom:10px}
+details[open]{border-color:var(--sun)}
+summary{font-weight:800;color:var(--navy);cursor:pointer}
+details p{margin-top:8px}
+footer{background:var(--sky);padding:36px 0;font-size:.95rem}
+footer .wrap{display:grid;gap:10px}
+.note{font-size:.88rem;opacity:.8}
+@media(min-width:760px){
+.hero .wrap{grid-template-columns:1.1fr 1fr}
+.grid.two{grid-template-columns:1fr 1fr}
+.steps{grid-template-columns:repeat(3,1fr)}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
 </head>
 <body>
 
-    <header>
-        <h1>Área Creativa Digital</h1>
-        <p>Libros de actividades, cuadernos y recursos exclusivos listos para descargar e imprimir.</p>
-    </header>
+<header>
+  <div class="wrap">
+    <a class="logo" href="#inicio">Área Creativa Digital</a>
+    <nav aria-label="Principal">
+      <a href="#productos">Productos</a>
+      <a href="#como-funciona">Cómo funciona</a>
+      <a href="#preguntas">Preguntas</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </div>
+</header>
 
-    <main class="catalogo">
-        <h2>Nuestros Productos Destacados</h2>
-        
-        <div class="grid-productos">
-            <!-- Producto 1 -->
-            <div class="card">
-                <img src="cuaderno-abc.png" alt="cuaderno-abc" style="width: 100%; height: auto;">
-                <h3>Cuaderno de Actividades ABC</h3>
-                <p class="descripcion">Formato PDF en alta calidad. <strong>¡Descarga inmediata para imprimir en casa tantas veces quieras!</strong></p>
-                <p class="precio">6.99 €</p>
-                <a href="#metodos-de-pago" class="btn-comprar">Comprar Ahora</a>
-            </div>
-
-            <!-- Producto 2 -->
-            <div class="card">
-               <img src="vocabulario.png" alt="vocabulario" style="width: 100%; height: auto;">
-                <p class="descripcion">Recursos visuales ideales para el aprendizaje. <strong>Formato listo para impresión directa.</strong></p>
-                <p class="precio">4.99 €</p>
-                <a href="#metodos-de-pago" class="btn-comprar">Comprar Ahora</a>
-            </div>
+<main id="inicio">
+  <div class="hero">
+    <div class="wrap">
+      <div>
+        <h1>Aprender jugando, listo para imprimir</h1>
+        <p>Libros de actividades y tarjetas educativas en PDF para niños. Se descargan al instante y se imprimen en casa las veces que haga falta.</p>
+        <a class="btn" href="#productos">Ver productos</a>
+        <div class="trust">
+          <span>✔ Descarga inmediata</span>
+          <span>✔ Formato PDF en alta calidad</span>
+          <span>✔ Imprime cuantas veces quieras</span>
         </div>
-    </main>
-
-   <section id="metodos-de-pago" class="seccion-pago" style="padding: 40px 20px; background: #ffffff; margin-top: 40px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
-    <h2 style="text-align: center; color: #333; margin-bottom: 25px;">Métodos de Pago e Instrucciones</h2>
-    
-    <div style="display: flex; flex-wrap: wrap; gap: 30px; justify-content: space-around;">
-        
-        <!-- Columna España: Bizum y Transferencia -->
-        <div style="flex: 1; min-width: 280px; background: #f8f9fa; padding: 20px; border-radius: 6px;">
-            <h3 style="color: #007bff; margin-bottom: 15px;">🇪🇸 Pagos en España</h3>
-            <p style="margin-bottom: 10px;"><strong>1. Bizum:</strong> Enviar al número <strong>[34+697787830]</strong></p>
-            <p style="margin-bottom: 10px;"><strong>2. Transferencia:</strong> IBAN <strong>[ES3301825332110001030892]</strong></p>
-            <p style="font-size: 0.9em; color: #666; margin-top: 15px;"><em>Indica el título del libro en el concepto.</em></p>
-        </div>
-
-        <!-- Columna Internacional: PayPal -->
-        <div style="flex: 1; min-width: 280px; background: #f8f9fa; padding: 20px; border-radius: 6px;">
-            <h3 style="color: #007bff; margin-bottom: 15px;">🌍 Compradores Internacionales</h3>
-            <p style="margin-bottom: 10px;"><strong>PayPal:</strong> Puedes realizar tu pago de forma segura enviándolo a nuestro correo:</p>
-            <p style="margin-bottom: 15px; font-weight: bold; color: #0070ba;">[amadaquinto@outlook.com]</p>
-            <p style="font-size: 0.9em; color: #666;"><em>Envíanos el comprobante por WhatsApp o email para recibir tu PDF al instante.</em></p>
-        </div>
-
+      </div>
+      <div class="covers">
+        <img src="cuaderno-abc.png" alt="Portada del Libro de Actividades ABC y 123" width="460" height="690">
+        <img src="vocabulario.png" alt="Portada del Pack de Tarjetas de Vocabulario" width="460" height="690">
+      </div>
     </div>
-</section>
+  </div>
 
-            <div class="aviso-envio">
-                <strong>Entrega Rápida:</strong> En cuanto verifiquemos el pago, te enviaremos el archivo PDF de alta calidad directamente a tu correo electrónico para que puedas imprimirlo al instante.
-            </div>
-        </div>
-    </section>
+  <section id="productos">
+    <div class="wrap">
+      <h2>Productos</h2>
+      <p class="lead">Materiales pensados para aprender en casa o en el aula. Pago único, sin suscripción.</p>
+      <div class="grid two">
 
-    <footer>
-        <p>&copy; 2026 Área Creativa Digital - Todos los derechos reservados.</p>
-    </footer>
+        <article class="card">
+          <img src="cuaderno-abc.png" alt="Mi Primer Libro de Actividades ABC y 123" loading="lazy">
+          <h3>Mi Primer Libro de Actividades ABC y 123</h3>
+          <p>Más de 50 páginas para repasar letras y números con trazos, colores y juegos.</p>
+          <ul>
+            <li>Formato PDF, listo para imprimir</li>
+            <li>Más de 50 páginas</li>
+            <li>Letras, números y actividades de trazo</li>
+          </ul>
+          <p class="price">6,99 €</p>
+          <!-- Sustituir # por el enlace de pago de Stripe / PayPal / Payhip de este producto -->
+          <a class="btn" href="#" data-product="cuaderno-abc">Comprar ahora</a>
+        </article>
+
+        <article class="card">
+          <img src="vocabulario.png" alt="Pack de Tarjetas de Vocabulario" loading="lazy">
+          <h3>Pack de Tarjetas de Vocabulario</h3>
+          <p>Flashcards ilustradas para ampliar el vocabulario y estimular la memoria visual.</p>
+          <ul>
+            <li>Formato PDF, impresión directa</li>
+            <li>Palabras en inglés y español</li>
+            <li>Ideales para casa y escuela</li>
+          </ul>
+          <p class="price">4,99 €</p>
+          <!-- Sustituir # por el enlace de pago de este producto -->
+          <a class="btn" href="#" data-product="tarjetas-vocabulario">Comprar ahora</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="como-funciona" style="background:#fff;padding-top:0">
+    <div class="wrap">
+      <h2>Cómo funciona</h2>
+      <p class="lead">Tres pasos y el material está en la impresora.</p>
+      <ol class="steps">
+        <li><strong>Elegir el producto.</strong><br>Se pulsa "Comprar ahora" y se paga de forma segura.</li>
+        <li><strong>Descargar el PDF.</strong><br>El enlace llega al correo justo después del pago.</li>
+        <li><strong>Imprimir y jugar.</strong><br>En papel A4 o Carta, en casa o en una copistería.</li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="band" id="regalo">
+    <div class="wrap">
+      <h2>Una hoja de actividades gratis</h2>
+      <p>Se envía al correo una muestra para probar el material antes de comprar.</p>
+      <!-- Conectar este formulario a Mailchimp, MailerLite o Brevo (todos tienen plan gratuito) -->
+      <form action="#" method="post">
+        <label for="email" class="sr" style="position:absolute;left:-9999px">Correo electrónico</label>
+        <input id="email" type="email" name="email" placeholder="Correo electrónico" required>
+        <button class="btn" type="submit">Quiero la muestra</button>
+      </form>
+    </div>
+  </section>
+
+  <section id="preguntas">
+    <div class="wrap">
+      <h2>Preguntas frecuentes</h2>
+      <p class="lead">Lo que más se pregunta antes de comprar.</p>
+      <details><summary>¿Cómo recibo el archivo?</summary><p>Por correo electrónico, justo después de completar el pago. Conviene revisar también la carpeta de spam.</p></details>
+      <details><summary>¿Es un producto físico?</summary><p>No. Son archivos PDF digitales que se imprimen en casa o en una imprenta.</p></details>
+      <details><summary>¿Cuántas veces se puede imprimir?</summary><p>Las que haga falta para uso personal, familiar o en un aula propia.</p></details>
+      <details><summary>¿Qué tamaño de papel se necesita?</summary><p>Los PDF se pueden imprimir en A4 o Carta, en blanco y negro o a color.</p></details>
+      <details><summary>¿Se puede devolver?</summary><p>Al ser un producto digital de descarga inmediata, no admite devolución una vez entregado el archivo. Si hay algún problema con el archivo, se resuelve por correo.</p></details>
+      <details><summary>¿Qué licencia tiene?</summary><p>Uso personal y educativo. No se permite revender, compartir ni subir los archivos a internet.</p></details>
+    </div>
+  </section>
+</main>
+
+<footer id="contacto">
+  <div class="wrap">
+    <strong>Contacto</strong>
+    <!-- Sustituir por el correo de la tienda -->
+    <span>Correo: <a href="mailto:TU-CORREO@ejemplo.com">TU-CORREO@ejemplo.com</a></span>
+    <span>Instagram: @tu_usuario · Pinterest: @tu_usuario</span>
+    <span class="note">Política de privacidad y cookies · Términos de uso · Aviso legal (añadir estas páginas antes de lanzar).</span>
+    <span class="note">© 2026 Área Creativa Digital. Todos los derechos reservados.</span>
+  </div>
+</footer>
 
 </body>
 </html>
